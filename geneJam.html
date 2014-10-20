@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="geneJam.css">
+  <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <link rel="icon" type="image/png" href="img/favicon.ico">
+  <title>geneJam</title>
+</head>
+<body>
+<div class="header">
+
+<h1>geneJam</h1>
+<h2>The gene search engine</h2>
+<img class="logo" src="img/geneJam.png" alt="">
+</div>
+
+<div class="forms">
+<label for="Gene2">Species SELECT!</label>
+<select name ="Gene2" id="geneSelect2">
+<option value="human">Human</option>
+<option value="mouse">Mouse</option>
+<option value="rat">Rat</option>
+<option value="fruitfly">Fruitfly</option>
+<option value="nematode">Nematode</option>
+<option value="zebrafish">Zebrafish</option>
+<option value="thale-cress">Thale-cress</option>
+<option value="frog">Frog</option>
+<option value="pig">Pig</option>
+</select>
+<div id="mygene_info_gene_query_widget">
+<form id="mygene_info_gene_query_form">
+<label>Search for genes:</label><br />
+<input type="text" name="query"></input>
+<input type="submit"></input>
+</form>
+<p class="compare">Compare with</p>
+ <label for="Gene3">Species SELECT!</label>
+<select name ="Gene3" id="geneSelect3">
+<option value="human">Human</option>
+<option value="mouse">Mouse</option>
+<option value="rat">Rat</option>
+<option value="fruitfly">Fruitfly</option>
+<option value="nematode">Nematode</option>
+<option value="zebrafish">Zebrafish</option>
+<option value="thale-cress">Thale-cress</option>
+<option value="frog">Frog</option>
+<option value="pig">Pig</option>
+</select>
+<input type="submit" id="compare"></input>
+<div id="comparatron"></div>
+</div>
+</div>
+
+<div id="mygene_info_gene_query_result"></div>
+</div>
+</td>
+<td valign="top">
+<div id="mygene_info_gene_datachart"></div>
+</td></tr>
+
+<script type="text/javascript" src="geneJam.js"></script>
+
+</body>
+</html>
+
